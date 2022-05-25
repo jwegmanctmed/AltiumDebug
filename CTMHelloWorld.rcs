@@ -1,0 +1,16 @@
+//Here you can define menus and toolbars
+PL
+    PLCTMHelloWorld:CTMHelloWorld
+    Command='CTMHelloWorld:CTMHelloWorld'
+    Caption='Hello World...'
+    Description='Just a little hello world dialog box'
+End
+
+Insertion MNSCH_HelloWorld
+    TargetID='MNSchematic_Design'
+    InsertType='After'
+    RefID0='MNSchematic_Design999'
+    Link MNSchematic_CTMHW
+        PLID='PLCTMHelloWorld:CTMHelloWorld'
+    End
+End
